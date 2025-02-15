@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer with Alarm || Amrullah Azzaky</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="ico/pict1.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+
+    <!-- mode pomodoro - start -->
+      <div class="modes">
+        <button onclick="setTimer(5)">Short Break</button>
+        <button onclick="setTimer(25)">Focus</button>
+        <button onclick="setTimer(15)">Long Break</button>
+      </div>
+    <!-- mode pomodoro - end -->
+
+    <!-- timer - start -->
+      <div class="timer">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+    <!-- timer - end -->
+
+    <!-- controls - start -->
+      <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">&#x21bb;</button>
+        <input type="number" id="customMinutes" placeholder="Minutes" />
+        <button onclick="setCustomTimer()">Set</button>
+      </div>
+    <!-- controls - end -->
+
+    </div>
+    <audio id="alarm" src="alarm.mp3"></audio>
+  </body>
+  <script src="script.js"></script>
+</html>
