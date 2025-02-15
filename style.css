@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  color: #fff;
+}
+.container {
+  text-align: center;
+}
+.modes button,
+.controls button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.timer {
+  font-size: 48px;
+  margin: 20px 0;
+}
+input {
+  padding: 5px;
+  text-align: center;
+}
